@@ -1,50 +1,44 @@
-let firstName = 'Sammy';
-let lastName = 'Smith';
-let sentance = 'Hello there john, my name is sammy and I love soccer, boxing and gamimg'
-
+let firstName = 'John';
+let lastName = 'Doe';
+let greeting = 'Hi there! How are you, John?';
+let looks = 'Brown,5\'ft 4,Black Hair,Male';
 let val;
 
-// Concatenation
-val = firstName + ' ' + lastName;
-
-// Appending
-val += ' Junior';
-
-// Escaping
-val = 'That\'s truely awesome I am so happy for you ' + firstName + '. Who\'s gonna be at the event\'s'
-
-// Length
-val = firstName.concat(' ' + lastName);
-
-// Concart
-val = firstName.concat(' ' + lastName);
-
-// Change Case
-val = firstName.toUpperCase();
-val = lastName.toLowerCase();
+// Concat();
+val = firstName.concat(' ', lastName);
 
 // IndexOf()
-val = firstName.indexOf('n');
-val = lastName.indexOf('i');
+val = greeting.indexOf('!');
 
-// CharAt
-val = firstName.charAt(2);
+// Substing();
+val = greeting.substring(0, 9);
 
-// Getting last character in string
-val = firstName.charAt(firstName.length - 1);
+// Slice();
+val = greeting.slice(0, 9);
 
-// substring()
-val = firstName.substring(0, 3)
+// Includes();
+val = greeting.includes('John');
 
-// slice()
-val = sentance.slice(0, 16);
+// Replace
+val = greeting.replace('John', 'Sammy Davis');
 
-// replace()
-sentance = sentance.replace('sammy', 'John')
+// Split();
+val = looks.split(',');
 
-// splice()
-val = sentance.split(' ');
+// CharAt();
+val = greeting.length;
+val = greeting.charAt(16);
 
+// Appending
+firstName += ' ' + lastName;
+
+// Case
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+val = firstName.slice(5, 8).toUpperCase();
+
+// Last Character
+val = greeting.charAt(greeting.length - 1);
 
 
 console.log(val);
