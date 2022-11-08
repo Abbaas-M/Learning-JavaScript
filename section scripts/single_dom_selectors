@@ -1,0 +1,28 @@
+// GETTING ELEMENT BY IT'S ID
+let taskTitle = document.getElementById('task-title');
+
+// STYLING ELEMENTS
+// taskTitle.style.color = 'coral';
+// taskTitle.style.backgroundColor = 'steelblue';
+// taskTitle.style.padding = '10px';
+// taskTitle.style.borderRadius = '15px'
+
+// CHANGING ELEMENTS CONTENT
+// taskTitle.innerText = 'Task Title';
+// taskTitle.textContent = 'Task Title 2';
+// taskTitle.innerHTML = `<h3>Task Title</h3><small>(changed)</small>`;
+
+// QUERY SELECTOR
+// console.log(document.querySelector('.task'));
+// console.log(document.querySelector('.task').style.color = 'red');
+// console.log(document.querySelector('.task').style.backgroundColor = 'orange');
+// let tasks = document.querySelectorAll('.task:nth-of-type(odd)');
+
+// tasks = Array.from(tasks);
+
+// tasks.forEach(function (task) {
+//     task.style.backgroundColor = 'grey';
+//     task.style.color = 'white';
+// });
+
+// let form = document.querySelector('.input-direct');
