@@ -48,5 +48,33 @@ val = childElement.parentNode;
 // val = parentElement.children[2].previousSibling;
 // val = parentElement.children[2].previousElementSibling;
 
+let tasks = document.querySelector('.task-items');
+let task = document.querySelector('.task');
+
+// GETTING CHILDREN
+val = tasks.children;
+val = tasks.childNodes;
+
+// GETTING CHILDREN COUNT
+// val = tasks.childElementCount;
+
+// GETTING PARENT ELEMENTS
+val = task.parentElement;
+
+// GETTING SIBLINGS OF ELEMNTS
+
+// NEXT SIBLING
+val = tasks.children[2].nextElementSibling;
+
+// PREVIOUS SIBLING
+val = tasks.children[2].previousElementSibling;
+
+// TAG NAME OF ELEMENT
+val = tasks.children[1].tagName;
+
+// PRACTICE
+val = tasks.firstElementChild.innerText = 'First Task Of The Day';
+val = tasks.lastElementChild.innerText = `Last Task Of The Day`
+
 console.log(val);
 
