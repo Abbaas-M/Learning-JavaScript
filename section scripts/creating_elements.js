@@ -22,3 +22,25 @@ btn.appendChild(document.createTextNode('Click Me'));
 btn.style.background = 'steelblue';
 btn.style.color = 'rgba(255,255,255,0.8)';
 document.body.appendChild(btn)
+
+let taskList = document.querySelector('.task-list');
+let btn = document.createElement('a');
+let btn2 = document.createElement('a');
+
+// BUTTON TEXT
+btn.appendChild(document.createTextNode('Edit Task'));
+btn2.appendChild(document.createTextNode('Remove Task'));
+
+// BUTTON STYLE FUNCTION
+function btnColor(button, color, title = button.innerText, link = '#') {
+    button.style.backgroundColor = color;
+    button.style.color = 'rgba(255,255,255,0.8)';
+    button.classList.add('btn');
+    button.setAttribute('title', title);
+    button.setAttribute('href', link);
+    taskList.appendChild(button)
+}
+
+// btnColor(button, color, title, link)
+btnColor(btn, 'rebeccapurple', 'edit button', 'https://worldofdevs.com');
+btnColor(btn2, 'seagreen', 'remove single task', 'https://nodejs.org')
