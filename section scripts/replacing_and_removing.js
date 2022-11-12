@@ -106,3 +106,33 @@ function taskFunc() {
 
 // taskItem.children[0].classList.add('new-remove-btn');
 // taskItem.children[0].children[0].classList.add('new-remove-icon')
+
+// REMOVING AND REPLACING ELEMENTS
+let list = document.querySelector('.task-items');
+let task = document.createElement('li');
+task.className = 'new-task-look';
+task.appendChild(document.createTextNode('New Task Update v.2.0.0'));
+
+let removeBtn = document.createElement('a');
+removeBtn.className = 'new-remove-btn'
+removeBtn.innerHTML = '<i class="fas fa-remove new-remove-icon"></i>'
+
+task.appendChild(removeBtn);
+
+// REMOVING
+
+// remove child
+// list.removeChild(list.children[2]);
+
+// remove
+// list.children[3].remove();
+
+// REPLACING
+// oldTask = list.children[2];
+// list.replaceChild(task, list.children[2]);
+
+// CLASSES - add, remove
+// list.children[2].classList.add('new-task-look');
+// list.children[2].classList.remove('new-task-look');
+
+
